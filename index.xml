@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yan Jiang</title>
+    <link>https://yjiangc.github.io/</link>
+    <description>Recent content on Yan Jiang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Yan Jiang�</copyright><atom:link href="https://yjiangc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yan Jiang</title>
+      <link>https://yjiangc.github.io/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yjiangc.github.io/</guid>
+      <description>Postdoctoral Scholar School of Global Policy &amp;amp; Strategy UC San Diego</description>
+    </item>
+    
+  </channel>
+</rss>
