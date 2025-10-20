@@ -15,7 +15,7 @@ main:
     url: /publications/
 
   - title: "CV"
-    url: /files/YanJiang_CV.pdf
+    url: /cv/
     # If you prefer to link directly to the PDF instead of a page, use:
     # url: /files/YanJiang_CV.pdf
 
