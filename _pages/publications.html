@@ -1,36 +1,48 @@
 ---
-layout: archive
-title: "Publications"
+layout: page
+title: publications
 permalink: /publications/
-author_profile: true
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+## In preparation
+<ul class="pub-list">
+{% assign inprep = site.publications | where: "category","in-prep" %}
+{% for p in inprep %}
+  <li>
+    <strong>{{ p.title }}</strong><br/>
+    {{ p.authors }}{% if p.venue %}. <em>{{ p.venue }}</em>{% endif %}{% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}.
+    {% if p.paperurl %}[paper]({{ p.paperurl }}){% endif %}
+    {% if p.doi %}[doi](https://doi.org/{{ p.doi }}){% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+## Journal publications
+{%- comment -%}
+Group all non-conference, non-in-prep items by year (desc), then list.
+{%- endcomment -%}
+{% assign pubs = site.publications | where_exp:"p","p.category != 'conference' and p.category != 'in-prep'" %}
+{% assign pubs_sorted = pubs | sort: "date" | reverse %}
+{% assign by_year = pubs_sorted | group_by_exp:"p","p.date | date: '%Y'" %}
+
+{% for y in by_year %}
+### {{ y.name }}
+<ul class="pub-list">
+  {% for p in y.items %}
+  <li>
+    <strong><a href="{{ p.url | relative_url }}">{{ p.title }}</a></strong><br/>
+    {{ p.authors }}. 
+    {% if p.venue %}<em>{{ p.venue }}</em>{% endif %}{% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}.
+    {% if p.paperurl %}[paper]({{ p.paperurl }}){% endif %}
+    {% if p.slidesurl %}[slides]({{ p.slidesurl }}){% endif %}
+    {% if p.bibtexurl %}[bibtex]({{ p.bibtexurl }}){% endif %}
+    {% if p.doi %}[doi](https://doi.org/{{ p.doi }}){% endif %}
+  </li>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+</ul>
+{% endfor %}
 
 
 
