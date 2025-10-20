@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[**⬇️ Download full CV (PDF)**](/files/YanJiang_CV.pdf){: .btn .btn--primary}
+[**⬇️ Download full CV (PDF)**](/files/CV_YanJiang.pdf){: .btn .btn--primary}
 _Last updated: 2025-10-20_
 
 ## Education
