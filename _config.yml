@@ -22,7 +22,7 @@ repository               : "yjiangc/yjiangc.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/h1.jpg" 
+  avatar           : "h1.jpg" 
   name             : "Yan Jiang"
   pronouns         : # example: "she/her"  
   bio              : "Postdoctoral Scholar, UC San Diego (SIO & GPS). Global water cycle, land–atmosphere interactions, crop water security."
