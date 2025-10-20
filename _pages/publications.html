@@ -20,9 +20,6 @@ permalink: /publications/
 </ul>
 
 ## Journal publications
-{%- comment -%}
-Group all non-conference, non-in-prep items by year (desc), then list.
-{%- endcomment -%}
 {% assign pubs = site.publications | where_exp:"p","p.category != 'conference' and p.category != 'in-prep'" %}
 {% assign pubs_sorted = pubs | sort: "date" | reverse %}
 {% assign by_year = pubs_sorted | group_by_exp:"p","p.date | date: '%Y'" %}
@@ -43,6 +40,3 @@ Group all non-conference, non-in-prep items by year (desc), then list.
   {% endfor %}
 </ul>
 {% endfor %}
-
-
-
