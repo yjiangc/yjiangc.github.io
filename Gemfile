@@ -1,22 +1,22 @@
 source 'https://rubygems.org'
 
+# Pin to the GitHub Pages environment (includes Jekyll + safe plugins)
+gem "github-pages", group: :jekyll_plugins
+
+# Academic Pages commonly uses these plugins
 group :jekyll_plugins do
-  gem 'jekyll'
-  gem 'jekyll-feed'
-  gem 'jekyll-sitemap'
-  gem 'jekyll-redirect-from'
-  gem 'jemoji'
-  gem 'webrick', '~> 1.8'
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "jekyll-redirect-from"
+  gem "jemoji"
+  gem "jekyll-scholar"   # needed for publications via BibTeX
 end
 
-gem 'github-pages'
-gem 'connection_pool', '2.5.0'
+# Some templates use this; keep your pinned version if you already had it
+gem "connection_pool", "2.5.0"
 
-# Needed on Windows so tzinfo can find time zone data
+# Windows: provide timezone data
 gem "tzinfo-data"
 
-# Optional but recommended on Windows for fast file watching
-gem "wdm", "~> 0.1.1", platforms: [:mingw, :mswin, :x64_mingw]
-
-# (If you ever see WEBrick missing on Ruby 3+)
+# Ruby 3+: local dev server
 gem "webrick", "~> 1.8"
