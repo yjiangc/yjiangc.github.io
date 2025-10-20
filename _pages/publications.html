@@ -8,7 +8,7 @@ permalink: /publications/
 
 ## In preparation
 <ul class="pub-list">
-{% assign inprep = site.publications | where: "category","in-prep" %}
+{% assign inprep = site.publications | where: "category","in-prep" | sort: "date" | reverse %}
 {% for p in inprep %}
   <li>
     <strong>{{ p.title }}</strong><br/>
@@ -19,8 +19,9 @@ permalink: /publications/
 {% endfor %}
 </ul>
 
-## Journal publications
 {% assign pubs = site.publications | where_exp:"p","p.category != 'conference' and p.category != 'in-prep'" %}
+{% if pubs.size > 0 %}
+## Journal publications
 {% assign pubs_sorted = pubs | sort: "date" | reverse %}
 {% assign by_year = pubs_sorted | group_by_exp:"p","p.date | date: '%Y'" %}
 
@@ -30,7 +31,7 @@ permalink: /publications/
   {% for p in y.items %}
   <li>
     <strong><a href="{{ p.url | relative_url }}">{{ p.title }}</a></strong><br/>
-    {{ p.authors }}. 
+    {{ p.authors }}.
     {% if p.venue %}<em>{{ p.venue }}</em>{% endif %}{% if p.date %} ({{ p.date | date: "%Y" }}){% endif %}.
     {% if p.paperurl %}[paper]({{ p.paperurl }}){% endif %}
     {% if p.slidesurl %}[slides]({{ p.slidesurl }}){% endif %}
@@ -40,3 +41,4 @@ permalink: /publications/
   {% endfor %}
 </ul>
 {% endfor %}
+{% endif %}
