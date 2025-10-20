@@ -80,10 +80,10 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
+  in-prep :
+    title: 'In preparation'
+  journal:
+    title: 'Peer-reviewed papers'    
   conferences:
     title: 'Conference Papers'
 
