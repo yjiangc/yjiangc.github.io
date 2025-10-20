@@ -9,37 +9,28 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+[**⬇️ Download full CV (PDF)**](/files/YanJiang_CV.pdf){: .btn .btn--primary}
+_Last updated: 2025-10-20_
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Education
+- **Ph.D., Atmospheric Science**, University at Albany (SUNY), 2022  
+  Advisor: Prof. Liming Zhou
+- **B.S., Atmospheric Science**, Sun Yat-Sen University, 2016
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Appointments
+- **Postdoctoral Scholar**, UC San Diego — School of Global Policy & Strategy & Scripps Institution of Oceanography, 2022–present  
+  Advisor: Prof. Jennifer Burney
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Research Interests
+Hydroclimate; land–human-climate interactions; global water cycler; rainfall seasonality; ecosystem health: wildfire/crop water stress; satellite remote sensing & AI/ML for geoscience.
+
+## Selected Honors & Awards
+- **NSF Convergence Accelerator (CORE) Fellow**, 2024
+- **NCAR Early Career Scientist Assembly Visitor Fund**, 2024
+- **MIT CEE Rising Stars Award**, 2023
+- **International Travel Grant (Climate and Large-Scale Dynamics Program of NFS)**, 2018
+- **National Scholarship, SYSU**, 2014, 2015
+- **First Price Scholar, SYSU**, 2013, 2014, 2015
 
 Publications
 ======
@@ -47,18 +38,11 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
+ 
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
