@@ -16,7 +16,7 @@ Hi! I am a hydroclimate scientist specializing in the dynamics of the global wat
 
 - Mitigation Solutions: Exploring actionable hazard adaptation and mitigation strategies through optimized land use management (e.g., the trade-offs between forest loss and cropland expansion).
 
- I completed my PhD in Atmospheric Science from the University at Albany, SUNY under the supervision of [Prof. Liming Zhou](https://www.albany.edu/daes/faculty/liming-zhou). My stories about the water cycle stacked up over the Congo Basin, were taught by my undergraduate advisors Prof. Song Yang and Prof. Xiaomin Hu at [Sun Yat-Sen University](https://atmos.sysu.edu.cn/), were ingenuiely inspired as a kid growing up in Guilin (桂林), a city entitled "By water, by mountains, most lovely, Guilin" (山水甲天下) in southern China. 
+ I completed my PhD in Atmospheric Science from the University at Albany, SUNY under the supervision of [Prof. Liming Zhou](https://www.albany.edu/daes/faculty/liming-zhou). My stories about the water cycle stacked up over the Congo Basin, were taught by my undergraduate advisors Prof. Song Yang and Prof. Xiaoming Hu at [Sun Yat-Sen University](https://atmos.sysu.edu.cn/), were ingenuiely inspired as a kid growing up in Guilin (桂林), a city entitled "By water, by mountains, most lovely, Guilin" (山水甲天下) in southern China. 
 
  ![The landscape](/images/city.jpg)
 
